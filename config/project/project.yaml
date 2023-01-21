@@ -1,0 +1,27 @@
+dateModified: 1674255795
+email:
+  fromEmail: julemee@gmail.com
+  fromName: 'craft test'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    3f018235-04c6-4541-a1ba-3042c99f485e: Common # Common
+    20857d99-3241-443a-a416-cb30514d00a8: 'craft test' # craft test
+    bfcea2ea-176d-44f8-9253-ed0d451b1cc9: 'craft test' # craft test
+plugins:
+  scss:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: 'craft test'
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
