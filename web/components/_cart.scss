@@ -56,10 +56,10 @@
 }
 
 .product-info {
-  gap: 1rem;
   display: flex;
   flex-direction: column;
   text-align: start;
+  line-height: 1;
 }
 
 .product-info p:last-child {
