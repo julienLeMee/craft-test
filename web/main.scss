@@ -1,0 +1,35 @@
+@import './components/variables';
+@import './components/navbar';
+@import './components/cart';
+@import './components/content';
+@import './components/lightbox';
+@import './components/media-queries';
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  font-family: $font-main;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 1110px;
+  height: 740px;
+}
+
+/* visibility actions */
+.hidden {
+  display: none;
+}
+
+.invisible {
+  display: none !important;
+}

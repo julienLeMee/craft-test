@@ -3,11 +3,145 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
-    <title>Welcome to Craft CMS</title>
+    <title>Welcome to {{ currentSite }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <meta name="referrer" content="origin-when-cross-origin" />
-    <body>
-        <h1>Welcome to Craft CMS</h1>
-        <p>Hi! This site’s name is {{ siteName }}.</p>
-    </body>
+    <link rel="stylesheet" href="style.css" />
+   <body>
+    <div class="container">
+      <!-- navbar -->
+      <nav>
+        <div class="nav_container">
+          <div class="nav-left-section">
+            <img
+              src="./images/uploads/sneakers/icon-menu.svg"
+              id="menu-btn"
+              alt="menu"
+              class="hidden menu"
+            />
+            <img src="./images/uploads/sneakers/logo.svg" alt="logo" class="nav_logo" />
+            <div class="overlay"></div>
+            <ul class="nav_links">
+              <img
+                src="./images/uploads/sneakers/icon-close.svg"
+                alt="close"
+                class="close-btn hidden"
+              />
+              <li class="nav_link">Collections</li>
+              <li class="nav_link">Men</li>
+              <li class="nav_link">Women</li>
+              <li class="nav_link">About</li>
+              <li class="nav_link">Contact</li>
+            </ul>
+          </div>
+          <div class="nav-right-section">
+            <!-- Cart -->
+            <div class="cart-container">
+              <button class="cart-btn">
+                <span class="indicator"></span>
+                <img src="./images/uploads/sneakers/icon-cart.svg" alt="cart" class="cart" />
+              </button>
+              <div class="cart-popup invisible">
+                <p class="cart-heading">Cart</p>
+                <div class="divider"></div>
+                <div class="cart-content empty">
+                  <p>Your cart is empty</p>
+                </div>
+              </div>
+            </div>
+            <img src="./images/uploads/sneakers/image-avatar.png" alt="avatar" class="avatar" />
+          </div>
+        </div>
+      </nav>
+      <main>
+        <!-- thumbnails -->
+        <section class="thumbnails">
+          <img
+            src="./images/uploads/sneakers/image-product-1.jpg"
+            alt="product"
+            class="main-thumbnail invisible-mob"
+          />
+          <div class="mobile-thumb hidden">
+            <img
+              src="./images/uploads/sneakers/image-product-1.jpg"
+              class="thumb-mob"
+              alt="product"
+            />
+            <button id="next">
+              <img src="./images/uploads/sneakers/icon-next.svg" alt="next" />
+            </button>
+            <button id="previous">
+              <img src="./images/uploads/sneakers/icon-previous.svg" alt="previos" />
+            </button>
+          </div>
+          <div>
+            <div class="preview">
+              <img
+                class="selected"
+                src="./images/uploads/sneakers/image-product-1-thumbnail.jpg"
+                alt=""
+              />
+              <img src="./images/uploads/sneakers/image-product-2-thumbnail.jpg" alt="" />
+              <img src="./images/uploads/sneakers/image-product-3-thumbnail.jpg" alt="" />
+              <img src="./images/uploads/sneakers/image-product-4-thumbnail.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+        <!-- content -->
+        <section class="content">
+          <p class="company">Sneaker Company</p>
+          <h1 class="title">Fall Limited Edition Sneakers</h1>
+          <p class="info">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price">
+            <div class="new-price">
+              <p class="now">$125.00</p>
+              <span>50%</span>
+            </div>
+            <p class="old-price">$250.00</p>
+          </div>
+          <div class="buttons">
+            <div class="amount-btn">
+              <button id="minus">
+                <img src="./images/uploads/sneakers/icon-minus.svg" alt="minus" />
+              </button>
+              <p class="amount">0</p>
+              <button id="plus">
+                <img src="./images/uploads/sneakers/icon-plus.svg" alt="plus" />
+              </button>
+            </div>
+            <button class="add_btn">
+              <img src="./images/uploads/sneakers/icon-cart.svg" alt="cart" />
+              Add to cart
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- Lightbox -->
+    <div class="lightbox invisible">
+      <div class="lightbox-container">
+        <button class="close-lightbox"><img src="./images/uploads/sneakers/icon-close.svg" alt="close"></button>
+        <img
+          src="./images/uploads/sneakers/image-product-1.jpg"
+          alt="product"
+          class="main-thumbnail invisible-mob"
+        />
+        <div class="preview">
+          <img
+            class="selected"
+            src="./images/uploads/sneakers/image-product-1-thumbnail.jpg"
+            alt=""
+          />
+          <img src="./images/uploads/sneakers/image-product-2-thumbnail.jpg" alt="" />
+          <img src="./images/uploads/sneakers/image-product-3-thumbnail.jpg" alt="" />
+          <img src="./images/uploads/sneakers/image-product-4-thumbnail.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
 </html>

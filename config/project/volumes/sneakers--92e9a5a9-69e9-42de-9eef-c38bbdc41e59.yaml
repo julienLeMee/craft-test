@@ -1,0 +1,43 @@
+fieldLayouts:
+  0eca8290-bdb5-4943-bfb5-6a8272a35e29:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 1a1379e1-1ae4-4702-a4ef-7b8f2635bb44
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 83bbc032-60c9-45a8-86e4-c4f329f283ce
+        userCondition: null
+fs: sneakers
+handle: sneakers
+name: Sneakers
+sortOrder: 1
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

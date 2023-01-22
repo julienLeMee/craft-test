@@ -1,0 +1,96 @@
+.cart-container {
+  position: relative;
+}
+
+.cart-wrp {
+  position: absolute;
+  left: -260px;
+  top: 50px;
+  z-index: 30;
+  width: 350px;
+  height: 250px;
+  background-color: var($White);
+  box-shadow: 0px 0px 15px 0px var($Grayish-blue);
+  border-radius: 10px;
+}
+
+.cart-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var($Grayish-blue);
+  opacity: 0.5;
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-content {
+  height: 200px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.cart-content .product div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-title {
+  color: var($Dark-grayish-blue);
+}
+
+.product-info {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.product-info p:last-child {
+  margin-right: auto;
+  color: var($Dark-grayish-blue);
+}
+
+.total {
+  color: var(--Black);
+  margin-left: 8px;
+}
+
+.cart-content img {
+  width: 60px;
+  border-radius: 6px;
+}
+
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  width: 18px;
+  cursor: pointer;
+}
+
+.checkout-btn {
+  background-color: var($Orange);
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 1rem;
+  cursor: pointer;
+}

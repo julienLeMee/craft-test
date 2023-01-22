@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: sneakers
+name: Sneakers
+propagationMethod: all
+siteSettings:
+  bfcea2ea-176d-44f8-9253-ed0d451b1cc9: # craft test
+    enabledByDefault: true
+    hasUrls: true
+    template: sneakers/_entry
+    uriFormat: 'sneakers/{slug}'
+type: channel

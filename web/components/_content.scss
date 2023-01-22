@@ -1,0 +1,146 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 2rem;
+  padding: 4rem;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-thumbnail {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.preview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.preview img {
+  width: 90px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.preview img:hover {
+  opacity: 60%;
+}
+
+.selected {
+  border: 2px solid var($Orange);
+  opacity: 50%;
+}
+
+.content {
+  padding: 4rem;
+}
+
+.company {
+  color: var($Orange);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.info {
+  color: var($Dark-grayish-blue);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.new-price {
+  display: flex;
+  align-items: center;
+}
+
+.new-price p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.new-price span {
+  margin-left: 1rem;
+  background-color: var($Pale-orange);
+  padding: 0.3rem;
+  border-radius: 6px;
+  color: var($Orange);
+  font-weight: 700;
+}
+
+.old-price {
+  color: var($Grayish-blue);
+  text-decoration: line-through;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.amount-btn {
+  background-color: var($Light-grayish-blue);
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  width: 35%;
+  border-radius: 7px;
+  justify-content: space-between;
+}
+
+.amount-btn button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.amount {
+  font-weight: 700;
+}
+
+.add_btn {
+  cursor: pointer;
+  width: 65%;
+  margin-left: 1rem;
+  background-color: var($Orange);
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 7px;
+  padding: 1rem;
+}
+
+.add_btn:hover {
+  opacity: 70%;
+}
+
+.add_btn img {
+  filter: brightness(5);
+}
