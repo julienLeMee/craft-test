@@ -1,4 +1,4 @@
-dateModified: 1674438418
+dateModified: 1674445149
 email:
   fromEmail: julemee@gmail.com
   fromName: 'craft test'
@@ -16,8 +16,9 @@ meta:
     3f018235-04c6-4541-a1ba-3042c99f485e: Common # Common
     069dc2f7-14d2-4253-aba3-1b113b1de6f8: Sneakers # Sneakers
     92e9a5a9-69e9-42de-9eef-c38bbdc41e59: Sneakers # Sneakers
-    300edb9e-b552-49a8-8ae6-f76962f4c402: Sneakers
+    300edb9e-b552-49a8-8ae6-f76962f4c402: Sneakers # Sneakers
     20857d99-3241-443a-a416-cb30514d00a8: 'craft test' # craft test
+    b5d7a3b8-7042-4628-b9c6-838cc86ba41c: Images # Images
     bc960869-3d4b-4748-a8d1-727ae5996c00: Sneakers # Sneakers
     bfcea2ea-176d-44f8-9253-ed0d451b1cc9: 'craft test' # craft test
     d012e6f9-8f61-4c10-ac7c-84410169e2e4: Default # Default

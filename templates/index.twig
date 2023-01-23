@@ -49,29 +49,38 @@
                 </div>
               </div>
             </div>
-            <img src="./images/uploads/sneakers/image-avatar.png" alt="avatar" class="avatar" />
+            {# <img src="./images/uploads/sneakers/image-avatar.png" alt="avatar" class="avatar" /> #}
+            {% set image = craft.assets.filename('image-avatar.png').one() %}
+            <img src={{ image.getUrl() }} alt="avatar" class="avatar" />
           </div>
         </div>
       </nav>
       <main>
         <!-- thumbnails -->
         <section class="thumbnails">
+          {% set image = craft.assets.filename('image-product-1.jpg').one() %}
           <img
-            src="./images/uploads/sneakers/image-product-1.jpg"
+            src={{ image.getUrl() }}
             alt="product"
             class="main-thumbnail invisible-mob"
           />
           <div class="mobile-thumb hidden">
             <img
-              src="./images/uploads/sneakers/image-product-1.jpg"
+              src={{ image.getUrl() }}
               class="thumb-mob"
               alt="product"
             />
             <button id="next">
-              <img src="./images/uploads/sneakers/icon-next.svg" alt="next" />
+              <img
+                src="./images/uploads/sneakers/icon-next.svg"
+                alt="next"
+              />
             </button>
             <button id="previous">
-              <img src="./images/uploads/sneakers/icon-previous.svg" alt="previos" />
+              <img
+                src="./images/uploads/sneakers/icon-previous.svg"
+                alt="previous"
+              />
             </button>
           </div>
           <div>
@@ -81,9 +90,18 @@
                 src="./images/uploads/sneakers/image-product-1-thumbnail.jpg"
                 alt=""
               />
-              <img src="./images/uploads/sneakers/image-product-2-thumbnail.jpg" alt="" />
-              <img src="./images/uploads/sneakers/image-product-3-thumbnail.jpg" alt="" />
-              <img src="./images/uploads/sneakers/image-product-4-thumbnail.jpg" alt="" />
+              <img
+                src="./images/uploads/sneakers/image-product-2-thumbnail.jpg"
+                alt=""
+              />
+              <img
+                src="./images/uploads/sneakers/image-product-3-thumbnail.jpg"
+                alt=""
+              />
+              <img
+                src="./images/uploads/sneakers/image-product-4-thumbnail.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -125,8 +143,9 @@
     <div class="lightbox invisible">
       <div class="lightbox-container">
         <button class="close-lightbox"><img src="./images/uploads/sneakers/icon-close.svg" alt="close"></button>
+        {% set image = craft.assets.filename('image-product-1.jpg').one() %}
         <img
-          src="./images/uploads/sneakers/image-product-1.jpg"
+          src={{ image.getUrl() }}
           alt="product"
           class="main-thumbnail invisible-mob"
         />

@@ -1,0 +1,65 @@
+fieldLayouts:
+  3fe432e8-b179-4340-9f33-2913ccd65ca2:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 357690fd-8ff2-46cd-8951-38be22a8d826
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\RelationalFieldConditionRule
+                  elementId: null
+                  fieldUid: f85da60c-56ed-4b9d-81c1-efa0ee861f81 # Sneakers
+                  operator: relatedTo
+                  uid: 16494c36-1590-4248-92a9-1d82b3fcbe61
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: f85da60c-56ed-4b9d-81c1-efa0ee861f81 # Sneakers
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: caabd360-3d67-4b33-a74c-0d48dadfed1c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: abe3a586-d1b9-4b46-ab08-98212d751230
+        userCondition: null
+handle: images
+hasTitleField: true
+name: Images
+section: bc960869-3d4b-4748-a8d1-727ae5996c00 # Sneakers
+sortOrder: 2
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

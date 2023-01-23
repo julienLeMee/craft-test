@@ -9,14 +9,15 @@ settings:
   allowSelfRelations: false
   allowSubfolders: false
   allowUploads: true
-  allowedKinds: null
+  allowedKinds:
+    - image
   defaultUploadLocationSource: 'volume:92e9a5a9-69e9-42de-9eef-c38bbdc41e59' # Sneakers
   defaultUploadLocationSubpath: null
   localizeRelations: false
   maxRelations: null
   minRelations: null
   previewMode: full
-  restrictFiles: false
+  restrictFiles: true
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:92e9a5a9-69e9-42de-9eef-c38bbdc41e59' # Sneakers
@@ -33,7 +34,7 @@ settings:
         - class
         - craft\elements\conditions\assets\AssetCondition
   selectionLabel: 'add sneakers image'
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   source: null
