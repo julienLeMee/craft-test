@@ -36,7 +36,7 @@ fieldLayouts:
 handle: default
 hasTitleField: true
 name: Default
-section: bc960869-3d4b-4748-a8d1-727ae5996c00
+section: bc960869-3d4b-4748-a8d1-727ae5996c00 # Sneakers
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
